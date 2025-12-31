@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. MAYANK SINGHANIA</title>
+     <link rel="icon" type="image/png" href="DP.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        ngrok config add-authtoken your-token-here
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+        display: none;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+         /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #ecf0f1;
+            padding: 50px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        .footer-col h4 {
+            /* color: #3498db; */
+            margin-bottom: 20px;
+            font-size: 18px;
+            position: relative;
+        }
+        
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #bc3ce7;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-col ul li a:hover {
+            color: #000102;
+            padding-left: 8px;
+        }
+        
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            /* background-color: rgba(255, 255, 255, 0.2); */
+            margin-right: 9.5px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ecf0f1;
+            transition: all 0.5s ease;
+        }
+        
+        .footer-col .social-links a:hover {
+            color: #2c3e50;
+            background-color: #ecf0f1;
+        }
+        
+        .footer-bottom {
+            margin-top: 30px;
+            background-color: #fdfdfd;
+            padding: 18px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+            color: #000000;
+            font-size: 14px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-indigo-600">Mr. MAYANK SINGHANIA</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-indigo-600">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-indigo-600">About</a>
+                    <a href="#services" class="text-gray-800 hover:text-indigo-600">Services</a>
+                    <a href="#skills" class="text-gray-800 hover:text-indigo-600">Skills</a>
+                    <a href="#projects" class="text-gray-800 hover:text-indigo-600">Projects</a>
+                    <a href="#FOOTER" class="text-gray-800 hover:text-indigo-600">Contact</a>
+                    <a href="MAYANK.pdf" class="text-gray-800 hover:text-indigo-600">CV / Resume</a>
+                </div>
+               <!-- Hamburger Button -->
+      <div class="md:hidden">
+        <button class="mobile-menu-button focus:outline-none">
+          <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+    class="mobile-menu max-h-0 overflow-hidden transition-all duration-500 ease-in-out md:hidden bg-white shadow-lg flex flex-col space-y-4 px-6">
+    <a href="#home" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">Home</a>
+    <a href="#about" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">About</a>
+    <a href="#services" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">Services</a>
+    <a href="#skills" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">Skills</a>
+    <a href="#projects" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">Projects</a>
+    <a href="#FOOTER" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">Contact</a>
+    <a href="MAYANK.pdf" class="mobile-link text-gray-800 hover:text-indigo-600 transition duration-300">CV Resume</a>
+  </div>
+    </nav>
+    <!-- JavaScript -->
+<script>
+  const btn = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+  const links = document.querySelectorAll('.mobile-link');
+
+  // Toggle menu on hamburger click
+  btn.addEventListener('click', () => {
+    if (menu.classList.contains('max-h-0')) {
+      menu.classList.remove('max-h-0');
+      menu.classList.add('max-h-screen');
+    } else {
+      menu.classList.add('max-h-0');
+      menu.classList.remove('max-h-screen');
+    }
+  });
+
+  // Auto close menu on link click
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('max-h-0');
+      menu.classList.remove('max-h-screen');
+    });
+  });
+</script>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4 md:flex items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm <span class="text-indigo-300">MAYANK</span></h1>
+                <h2 class="text-2xl md:text-3xl mb-6">An IT Engineer & Support Specialist <span id="typed-text" class="text-indigo-300"></span></h2>
+                <p class="text-lg mb-8">I am passionate about providing end-to-end IT support, resolving technical issues, and creating efficient solutions to keep systems running smoothly.</p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-100 transition duration-300">View My Work</a>
+                    <a href="#FOOTER" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="DP.jpg" alt="A professional portrait of me smiling, wearing formal attire against a neutral background" class="rounded-full w-64 h-64 object-cover border-4 border-white shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-indigo-600">About Me</h2>
+            <div class="md:flex items-center space-x-12">
+                <div class="md:w-1/3 mb-10 md:mb-0">
+                    <img src="about.png" alt="Me working at a modern desk with a laptop, notebook and cup of coffee"  class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Who Am I?</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                       I am passionate about providing end-to-end IT support, 
+                       resolving technical issues, and creating efficient solutions to ensure systems run smoothly. 
+                       With a strong background in IT infrastructure and troubleshooting, I have worked on a variety 
+                       of projects that demonstrate my ability to deliver reliable and scalable support.
+                    </p>
+                    <h3 id= "Education" class="text-2xl font-semibold mb-4 text-gray-800">My Education</h3>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded-full mr-3"></div>
+                            <h4 class="font-medium text-gray-800">B.Tech - Computer Science</h4>
+                        </div>
+                        <p class="text-gray-600 ml-7">Global Institute of Technology & Management ( GITM ) (2024-2027)</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded-full mr-3"></div>
+                            <h4 class="font-medium text-gray-800">Diploma in Information Technology</h4>
+                        </div>
+                        <p class="text-gray-600 ml-7">I successfully completed my Diploma from DSEU Rajokari Campus (2020-2023)</p>
+                    </div>
+                    <h3  id="Experience" class="text-2xl font-semibold mb-4 text-gray-800">My Experience</h3>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded-full mr-3"></div>
+                            <h4 class="font-medium text-gray-800">I worked as “IT Support and Hardware” in AVS holidays Pvt Ltd.
+                            </h4>
+                        </div>
+                        <p class="text-gray-600 ml-7">2024-2025 | Delhi, India</p>
+                    </div>
+                     <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 bg-indigo-500 rounded-full mr-3"></div>
+                            <h4 class="font-medium text-gray-800">I worked as “IT Support and Hardware” in KK Securities Limited.
+                            </h4>
+                        </div>
+                        <p class="text-gray-600 ml-7">2025-Present| Delhi, India</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!-- Services Section -->
+                    <section id="services" class="py-20 bg-white">
+                    <div class="max-w-6xl mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-16 text-indigo-600">My Services</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">🛠️ IT Support</h3>
+                    <p class="text-gray-600">Comprehensive IT support to keep your systems running smoothly and efficiently. From software issues to system troubleshooting, we ensure everything stays on track.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                                    <h3 class="text-xl font-semibold mb-4 text-gray-800">🖥️ Hardware Services</h3>
+                    <p class="text-gray-600">Expert hardware installation, repair, and maintenance for desktops, laptops, printers, and other peripherals to ensure reliable performance.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">🌐 Network Setup & Support</h3>
+                    <p class="text-gray-600">Designing and setting up secure and efficient network systems, including Wi-Fi configuration, LAN setup, and network troubleshooting.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">☁️ System Upgrades & Optimization</h3>
+                    <p class="text-gray-600">Upgrading hardware components (RAM, SSDs, etc.) and optimizing system performance to meet your business or personal needs.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">📞 Remote & On-site Support</h3>
+                    <p class="text-gray-600">Providing quick and reliable support remotely or at your location depending on your needs.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">🔄 Hardware Troubleshooting & Repair</h3>
+                    <p class="text-gray-600">Diagnosing and fixing hardware issues in desktops, laptops, and other devices to ensure uninterrupted performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-indigo-600">My Skills</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Technical Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Technical Skills</h3>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Operating Systems Installation (Windows/Linux)</span>
+                            <span class="text-gray-600">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">System Troubleshooting</span>
+                            <span class="text-gray-600">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Computer Networking Configuration / IP Configuration </span>
+                            <span class="text-gray-600">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Domain Server</span>
+                            <span class="text-gray-600">50%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Skills -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Professional Skills</h3>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Communication</span>
+                            <span class="text-gray-600">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Teamwork</span>
+                            <span class="text-gray-600">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Project Management</span>
+                            <span class="text-gray-600">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-medium text-gray-700">Creativity</span>
+                            <span class="text-gray-600">88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full skill-bar" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-indigo-600">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="WEB1.png" alt="E-commerce website dashboard showing product listings with clean UI" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Business Website</h3>
+                        <p class="text-gray-600 mb-4">A responsive business website built for a WiFi company showcasing services, plans, contact forms, and customer support details.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">HTML/CSS</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">PHP/SQl</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image1.png" alt="Mobile app interface showing weather forecast with clean animations" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Farm-to-Home Website</h3>
+                        <p class="text-gray-600 mb-4">A responsive website designed to empower local farmers to sell their fresh produce directly to customers without involving middlemen. The platform allows farmers to list vegetables, manage orders, and ensure direct-to-door delivery — promoting fair trade and transparency.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">HTML/CSS </span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">PHP/MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-500">
+                    <div class="h-48 overflow-hidden">
+                        <img src="image.png" alt="Task management application with drag and drop functionality" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">IT Support & System Administration</h3>
+                        <p class="text-gray-600 mb-4">Provided technical support for Windows and Linux systems, including OS installation, troubleshooting, and basic server configuration. Skilled in IP setup, computer networking, and domain server management for smooth system operations in small to medium-scale environments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Windows/Linux</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Networking</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">IP Configuration / Domain Server</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-indigo-600">Contact Me</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <-- Contact Form -->
+                <!-- <div>
+                    <form class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-6">
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div> -->
+
+        <!-- ✅ Submit Button -->
+        <!-- <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition duration-300"> -->
+            <!-- Submit -->
+        <!-- </button> -->
+    <!-- </form> -->
+<!-- </div> --> 
+<!-- </section> -->
+
+                       <!-- FOOTER -->
+                      <section  id="FOOTER" class="lastfooter">
+                         <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>About Me</h4>
+                <ul>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#about">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Certifications</a></li>
+                </ul>
+            </div>
+            
+            <!-- <div class="footer-col">
+                <h4>My Projects</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">IT Support Solutions</a></li>
+                    <li><a href="#">Database Management</a></li>
+                    <li><a href="#">Networking Projects</a></li>
+                </ul>
+            </div>
+             -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#FOOTER">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://x.com/mack_jon1" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/mr-mayank-singhania-a609b7215/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://t.me/mack_jon1" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/mackjon1" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                    <p style="margin-top: 40px;">
+                    <i class="fas fa-envelope"></i>
+                    <span style="margin-left: 10px;">mayankk12342@gmail.com</span><br> 
+                    <i class="fas fa-phone"></i>
+                    <span style="margin-left: 10px;">+91 8447637943</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mayank's Portfolio | Designed with ❤️ by Mayank</p>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome for icons (you can include this in your main head section) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                      </section>
